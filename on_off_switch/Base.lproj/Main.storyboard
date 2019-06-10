@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="on_off_switch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do You Want To Eat Pizza???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="God-5a-pct">
+                                <rect key="frame" x="52" y="80" width="279" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="QTQ-Dj-Pmm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="25"/>
+                                <color key="textColor" red="0.99286742003146466" green="1" blue="0.16119143248265599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpt-tI-u4r">
+                                <rect key="frame" x="163" y="256" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="d8V-FS-tkR"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc8-Nw-Yst">
+                                <rect key="frame" x="76" y="385" width="231" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="74"/>
+                                <color key="textColor" red="1" green="0.27980008610650353" blue="0.32755764756249128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fpt-tI-u4r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7aR-zD-mRK"/>
+                            <constraint firstItem="Pc8-Nw-Yst" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="AI3-4z-TOc"/>
+                            <constraint firstItem="God-5a-pct" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Bly-O1-BA1"/>
+                            <constraint firstItem="fpt-tI-u4r" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="256" id="Li7-sd-AIK"/>
+                            <constraint firstItem="Pc8-Nw-Yst" firstAttribute="centerX" secondItem="God-5a-pct" secondAttribute="centerX" id="QvY-yi-BQp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="God-5a-pct" secondAttribute="trailing" constant="44" id="SjX-L9-zxb"/>
+                            <constraint firstItem="God-5a-pct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="txj-sI-KJ5"/>
+                            <constraint firstItem="Pc8-Nw-Yst" firstAttribute="top" secondItem="fpt-tI-u4r" secondAttribute="bottom" constant="98" id="wwO-gm-byT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="Pc8-Nw-Yst" id="tMz-3x-ALf"/>
+                        <outlet property="quesLabel" destination="God-5a-pct" id="s6d-2F-kwK"/>
+                        <outlet property="switchOutlet" destination="fpt-tI-u4r" id="p4a-tm-vk7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="106"/>
+        </scene>
+    </scenes>
+</document>
